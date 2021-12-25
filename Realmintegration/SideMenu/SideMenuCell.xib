@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuCell" customModule="Realmintegration" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TOF-VF-hsh" customClass="SideMenuCell" customModule="CustomSideMenuiOSExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TOF-VF-hsh" id="0Rn-xu-jBg">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WyD-ej-oRm">
+                        <rect key="frame" x="16" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="SoJ-zD-0f1"/>
+                            <constraint firstAttribute="height" constant="30" id="cYn-TT-FGU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD0-WW-cbf">
+                        <rect key="frame" x="59" y="12.5" width="246" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pD0-WW-cbf" secondAttribute="trailing" constant="15" id="C9D-ha-pHK"/>
+                    <constraint firstItem="pD0-WW-cbf" firstAttribute="leading" secondItem="WyD-ej-oRm" secondAttribute="trailing" constant="13" id="FAT-Va-YBu"/>
+                    <constraint firstItem="WyD-ej-oRm" firstAttribute="leading" secondItem="0Rn-xu-jBg" secondAttribute="leading" constant="16" id="JsZ-E0-No2"/>
+                    <constraint firstItem="WyD-ej-oRm" firstAttribute="centerY" secondItem="0Rn-xu-jBg" secondAttribute="centerY" id="Nzc-eu-xiW"/>
+                    <constraint firstItem="pD0-WW-cbf" firstAttribute="centerY" secondItem="0Rn-xu-jBg" secondAttribute="centerY" id="zQa-8C-9QW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0Sg-C3-Kgh"/>
+            <connections>
+                <outlet property="iconImageView" destination="WyD-ej-oRm" id="WAm-7a-PH6"/>
+                <outlet property="titleLabel" destination="pD0-WW-cbf" id="g9u-Mb-7DQ"/>
+            </connections>
+            <point key="canvasLocation" x="-123" y="147"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,24 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QC4-GF-Xf8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Department-->
+        <scene sceneID="qVP-lU-K5w">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="8Da-2E-i16" customClass="HomeViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fww-YU-49i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Navigation View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-Te-f7q">
+                                <rect key="frame" x="51.5" y="375" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="phc-TF-koW"/>
+                        <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gff-Te-f7q" firstAttribute="centerY" secondItem="phc-TF-koW" secondAttribute="centerY" id="BAr-tP-Tyz"/>
+                            <constraint firstItem="Gff-Te-f7q" firstAttribute="centerX" secondItem="phc-TF-koW" secondAttribute="centerX" id="Iob-1C-nuU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Department" id="sHb-UN-ggl">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="8nf-W3-D0d"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="8nf-W3-D0d" id="LtM-W0-wQJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2B-KH-68d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2519" y="1598"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CXK-SH-hL6">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavID" automaticallyAdjustsScrollViewInsets="NO" id="Ztz-oD-aRd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ptS-U4-dOq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.73725490199999999" green="0.1333333333" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Da-2E-i16" kind="relationship" relationship="rootViewController" id="65k-UZ-2vP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4FQ-jr-VGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2488" y="891"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="GdV-9i-ssp">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuID" id="CH2-7S-W2c" customClass="SideMenuViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2E-3M-qq2">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zJA-HT-S9I">
+                                <rect key="frame" x="0.0" y="112" width="260" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Footer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4r-lv-sRw">
+                                <rect key="frame" x="10" y="839" width="240" height="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q4L-pG-Lih"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.12941176469999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e4r-lv-sRw" firstAttribute="top" secondItem="zJA-HT-S9I" secondAttribute="bottom" constant="8" id="3ko-MS-dwi"/>
+                            <constraint firstItem="e4r-lv-sRw" firstAttribute="leading" secondItem="Q4L-pG-Lih" secondAttribute="leading" constant="10" id="9kN-rM-gVE"/>
+                            <constraint firstItem="zJA-HT-S9I" firstAttribute="leading" secondItem="Q4L-pG-Lih" secondAttribute="leading" id="L1w-O8-abA"/>
+                            <constraint firstItem="zJA-HT-S9I" firstAttribute="trailing" secondItem="Q4L-pG-Lih" secondAttribute="trailing" id="UD4-sy-BV1"/>
+                            <constraint firstItem="Q4L-pG-Lih" firstAttribute="bottom" secondItem="e4r-lv-sRw" secondAttribute="bottom" constant="8" id="UoF-ce-rjT"/>
+                            <constraint firstItem="zJA-HT-S9I" firstAttribute="top" secondItem="Q4L-pG-Lih" secondAttribute="top" constant="68" id="sg7-C0-IZo"/>
+                            <constraint firstAttribute="trailing" secondItem="e4r-lv-sRw" secondAttribute="trailing" constant="10" id="xC1-MS-I57"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="260" height="896"/>
+                    <connections>
+                        <outlet property="footerLabel" destination="e4r-lv-sRw" id="1mH-Q9-jAw"/>
+                        <outlet property="sideMenuTableView" destination="zJA-HT-S9I" id="abr-Md-QAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWc-1L-mQ1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3893" y="891"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="q67-TV-7c1">
+            <objects>
+                <viewController id="QC4-GF-Xf8" customClass="MainViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C6s-Qg-NGW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DDQ-45-va4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRt-II-Kgo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-3261" y="891"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jMX-1a-GWY">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavID" automaticallyAdjustsScrollViewInsets="NO" id="Fro-ON-9xL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="n75-c7-ztj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.73725490199999999" green="0.1333333333" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ef5-zg-cio" kind="relationship" relationship="rootViewController" id="c1G-3g-uwY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DK3-cM-gig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1743" y="891"/>
+        </scene>
+        <!--Employee-->
+        <scene sceneID="VIq-2o-3yJ">
+            <objects>
+                <viewController id="ef5-zg-cio" customClass="HomeViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fk-te-Yia">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Navigation View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwd-Fd-Xw0">
+                                <rect key="frame" x="51.5" y="375" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nUc-v8-cc7"/>
+                        <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kwd-Fd-Xw0" firstAttribute="centerX" secondItem="nUc-v8-cc7" secondAttribute="centerX" id="1Ax-4O-Rwb"/>
+                            <constraint firstItem="kwd-Fd-Xw0" firstAttribute="centerY" secondItem="nUc-v8-cc7" secondAttribute="centerY" id="NIJ-E5-bXU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Employee" id="Hll-Nb-3TJ">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="I9o-Oo-pjy"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sideMenuBtn" destination="I9o-Oo-pjy" id="32c-U3-ch7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvo-Jp-fDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1712" y="1598"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
