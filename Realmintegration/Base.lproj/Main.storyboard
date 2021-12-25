@@ -11,13 +11,13 @@
         <!--Department-->
         <scene sceneID="qVP-lU-K5w">
             <objects>
-                <viewController id="8Da-2E-i16" customClass="HomeViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8Da-2E-i16" customClass="DepartmentViewController" customModule="Realmintegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fww-YU-49i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Navigation View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-Te-f7q">
-                                <rect key="frame" x="51.5" y="375" width="311" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DepartMent Navigation View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gff-Te-f7q">
+                                <rect key="frame" x="23" y="375" width="368" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="8nf-W3-D0d"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="sideMenuBtn" destination="8nf-W3-D0d" id="LtM-W0-wQJ"/>
+                        <outlet property="sideMenuBtn" destination="8nf-W3-D0d" id="Ki4-w4-gni"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z2B-KH-68d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -44,7 +44,7 @@
         <!--Navigation Controller-->
         <scene sceneID="CXK-SH-hL6">
             <objects>
-                <navigationController storyboardIdentifier="HomeNavID" automaticallyAdjustsScrollViewInsets="NO" id="Ztz-oD-aRd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DepartmentNavID" automaticallyAdjustsScrollViewInsets="NO" id="Ztz-oD-aRd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ptS-U4-dOq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-3893" y="891"/>
         </scene>
-        <!--Main View Controller-->
+        <!--View Controller-->
         <scene sceneID="q67-TV-7c1">
             <objects>
-                <viewController id="QC4-GF-Xf8" customClass="MainViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QC4-GF-Xf8" customClass="ViewController" customModule="Realmintegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C6s-Qg-NGW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Navigation Controller-->
         <scene sceneID="jMX-1a-GWY">
             <objects>
-                <navigationController storyboardIdentifier="HomeNavID" automaticallyAdjustsScrollViewInsets="NO" id="Fro-ON-9xL" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EmployeeNavID" automaticallyAdjustsScrollViewInsets="NO" id="Fro-ON-9xL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="n75-c7-ztj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -146,13 +146,13 @@
         <!--Employee-->
         <scene sceneID="VIq-2o-3yJ">
             <objects>
-                <viewController id="ef5-zg-cio" customClass="HomeViewController" customModule="CustomSideMenuiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ef5-zg-cio" customClass="EmployeeViewController" customModule="Realmintegration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fk-te-Yia">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Navigation View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwd-Fd-Xw0">
-                                <rect key="frame" x="51.5" y="375" width="311" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EmployeeList Navigation View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwd-Fd-Xw0">
+                                <rect key="frame" x="16.5" y="375" width="381.5" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -169,7 +169,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="I9o-Oo-pjy"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="sideMenuBtn" destination="I9o-Oo-pjy" id="32c-U3-ch7"/>
+                        <outlet property="sideMenuBtn" destination="I9o-Oo-pjy" id="Txg-ka-cz6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvo-Jp-fDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,9 @@
 		60C9EA4B2776E29900E4F5E2 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9EA492776E29900E4F5E2 /* SideMenuCell.swift */; };
 		60C9EA4C2776E29900E4F5E2 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C9EA4A2776E29900E4F5E2 /* SideMenuCell.xib */; };
 		60C9EA4E2776E36600E4F5E2 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9EA4D2776E36600E4F5E2 /* SideMenuModel.swift */; };
+		60C9EA502776E43E00E4F5E2 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9EA4F2776E43E00E4F5E2 /* SideMenuViewController.swift */; };
+		60C9EA522776E77400E4F5E2 /* DepartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9EA512776E77400E4F5E2 /* DepartmentViewController.swift */; };
+		60C9EA542776E79B00E4F5E2 /* EmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C9EA532776E79B00E4F5E2 /* EmployeeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		60C9EA492776E29900E4F5E2 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		60C9EA4A2776E29900E4F5E2 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
 		60C9EA4D2776E36600E4F5E2 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		60C9EA4F2776E43E00E4F5E2 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		60C9EA512776E77400E4F5E2 /* DepartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentViewController.swift; sourceTree = "<group>"; };
+		60C9EA532776E79B00E4F5E2 /* EmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 				60C9EA3D2776D9F900E4F5E2 /* Assets.xcassets */,
 				60C9EA3F2776D9F900E4F5E2 /* LaunchScreen.storyboard */,
 				60C9EA422776D9F900E4F5E2 /* Info.plist */,
+				60C9EA512776E77400E4F5E2 /* DepartmentViewController.swift */,
+				60C9EA532776E79B00E4F5E2 /* EmployeeViewController.swift */,
 			);
 			path = Realmintegration;
 			sourceTree = "<group>";
@@ -80,6 +88,7 @@
 				60C9EA492776E29900E4F5E2 /* SideMenuCell.swift */,
 				60C9EA4A2776E29900E4F5E2 /* SideMenuCell.xib */,
 				60C9EA4D2776E36600E4F5E2 /* SideMenuModel.swift */,
+				60C9EA4F2776E43E00E4F5E2 /* SideMenuViewController.swift */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -160,6 +169,9 @@
 				60C9EA352776D9F800E4F5E2 /* AppDelegate.swift in Sources */,
 				60C9EA372776D9F800E4F5E2 /* SceneDelegate.swift in Sources */,
 				60C9EA4B2776E29900E4F5E2 /* SideMenuCell.swift in Sources */,
+				60C9EA522776E77400E4F5E2 /* DepartmentViewController.swift in Sources */,
+				60C9EA502776E43E00E4F5E2 /* SideMenuViewController.swift in Sources */,
+				60C9EA542776E79B00E4F5E2 /* EmployeeViewController.swift in Sources */,
 				60C9EA4E2776E36600E4F5E2 /* SideMenuModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
